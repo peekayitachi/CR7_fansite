@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CR7 Fairytale</title>
+    <link rel="icon" href="/images/cr7-logo-png-transparent.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111;
+            color: white;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .main-heading {
+            text-align: center;
+            font-size: 70px;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8);
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            z-index: 10;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh; /* Full viewport height */
+            position: relative;
+        }
+        section {
+            flex: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.1); /* Enlarge section on hover */
+            z-index: 1; /* Bring section to the front */
+        }
+        section h1 {
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        section h1:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        section p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        .buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 10;
+        }
+        .buttons a {
+            padding: 10px 15px;
+            color: white;
+            background-color: red;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+            
+        }
+        .buttons a:hover {
+            background-color: darkred;
+            transform: translateY(-2px);
+            
+        }
+        #early-childhood {
+            background-image: url('/images/childhood.jpg'); 
+        }
+        #manchester-united {
+            background-image: url('/images/CR7_MU.webp');
+        }
+        #real-madrid {
+            background-image: url('/images/CR7_RM.webp');
+        }
+        #final-years {
+            background-image: url('/images/Legend.jpg'); 
+        }
+    </style>
+</head>
+<body>
+    <div class="main-heading">
+        The Fairytale of Cristiano Ronaldo
+    </div>
+    <div class="container">
+        <section id="early-childhood">
+            <h1><a href="/main/childhood.html" style="color: white; text-decoration: none;">Early Childhood</a></h1>
+            <p>The starting of the fairytale of one of the greatest who ever touched the ball</p>
+        </section>
+
+        <section id="manchester-united">
+            <h1><a href="/main/manu.html" style="color: white; text-decoration: none;">Manchester United</a></h1>
+            <p>The place where it all began and skyrocketed the teen's career</p>
+        </section>
+
+        <section id="real-madrid">
+            <h1><a href="/main/rm.html" style="color: white; text-decoration: none;">Real Madrid</a></h1>
+            <p>The time when he met his greatest rival and was at the peak of football</p>
+        </section>
+
+        <section id="final-years">
+            <h1><a href="/main/final.html" style="color: white; text-decoration: none;">Final Years</a></h1>
+            <p>The story after he left his home, his fantasy behind but still breaking records</p>
+        </section>
+    </div>
+
+    <div class="buttons">
+        <a href="/navigation/about.html">About</a>
+        <a href="/navigation/photogallery.html">Photo Gallery</a>
+        <a href="/navigation/stats.html">Stats</a>
+        <a href="/navigation/socials.html">Socials</a>
+    </div>
+</body>
+</html>
