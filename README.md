@@ -2,7 +2,7 @@
 
 This project is a dedicated fansite that chronicles the incredible career of Cristiano Ronaldo. It provides a detailed timeline of his journey, achievements, and memorable moments, complemented by interactive visualizations and a responsive design.
 
-![Website Preview](CR7 timeline/images/Screenshot 2025-01-07 153905.png) <!-- Replace with the actual path to your image -->
+![Website Preview](https://github.com/peekayitachi/CR7_fansite/blob/00f953d0eed72ae3771915dd1751a62793b34182/CR7%20timeline/images/proof%20of%20work) <!-- Replace with the actual path to your image -->
 
 ---
 
@@ -24,9 +24,6 @@ This project is a dedicated fansite that chronicles the incredible career of Cri
   - JavaScript (Vanilla JS + ApexCharts)
 - **Styling**:
   - Responsive and minimalistic design using CSS
-- **Hosting**:
-  - GitHub Pages (optional, if hosted)
-
 ---
 
 ## Project Structure
@@ -49,3 +46,16 @@ This project is a dedicated fansite that chronicles the incredible career of Cri
 │   ├── stats.html              # Statistics page
 │   └── stats.js                # JavaScript for charts and stats
 └── README.md                   # Project documentation
+```
+---
+## Future Enhancements
+
+- **Dark Mode**: Introduce a toggle switch to enable dark mode for better user experience during night-time browsing.
+- **Video Highlights**: Embed videos of Ronaldo's iconic goals, match highlights, and memorable moments.
+- **Live Updates**: Implement live updates for Ronaldo's latest statistics, including match performances and achievements.
+- **Interactive Timeline**: Create an interactive timeline that allows users to explore Ronaldo's career milestones in greater detail.
+- **Multilingual Support**: Add support for multiple languages to make the website accessible to a global audience.
+- **User Testimonials**: Include a section where fans can share their messages or favorite moments about Cristiano Ronaldo.
+- **Merchandise Integration**: Add a section to promote and link to official Ronaldo merchandise.
+- **Search Functionality**: Implement a search bar to allow users to quickly find specific stats or career highlights.
+---
