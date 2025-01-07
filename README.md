@@ -2,7 +2,7 @@
 
 This project is a dedicated fansite that chronicles the incredible career of Cristiano Ronaldo. It provides a detailed timeline of his journey, achievements, and memorable moments, complemented by interactive visualizations and a responsive design.
 
-![Website Preview](path/to/your/image.jpg) <!-- Replace with the actual path to your image -->
+![Website Preview](CR7 timeline/images/Screenshot 2025-01-07 153905.png) <!-- Replace with the actual path to your image -->
 
 ---
 
