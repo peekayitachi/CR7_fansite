@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Cristiano Ronaldo Complete Stats</title>
@@ -20,29 +21,41 @@
             background-image: url(/images/collage_stats.jpg);
             background-size: contain;
         }
+
         table {
             width: 90%;
             max-width: 960px;
             border-collapse: collapse;
             margin: 20px 0;
             background: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        th, td {
+
+        th,
+        td {
             padding: 12px 15px;
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
+
         th {
             background-color: #00529F;
             color: white;
         }
+
         .header {
             text-align: center;
             padding: 20px;
         }
+
+        .chart {
+            max-width: 500px;
+            /* or 100% if you want it full width */
+            margin: auto;
+        }
     </style>
 </head>
+
 <body>
     <table>
         <tr class="header">
@@ -101,14 +114,14 @@
             <th>National Team</th>
             <th>Appearances</th>
             <th>Goals</th>
-            
+
         </tr>
         <tr>
             <td>2003-Present</td>
             <td>Portugal</td>
             <td>189</td>
             <td>130</td>
-            
+
         </tr>
         <!-- Add more rows as needed -->
     </table>
@@ -149,5 +162,87 @@
             <td>Real Madrid</td>
         </tr>
     </table>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Define the spark and line chart configurations (already provided)
+            new ApexCharts(document.querySelector("#spark1"), spark1).render();
+            new ApexCharts(document.querySelector("#spark2"), spark2).render();
+            new ApexCharts(document.querySelector("#spark3"), spark3).render();
+            new ApexCharts(document.querySelector("#spark4"), spark4).render();
+        
+            // Line chart for goals and assists
+            var optionsLine = {
+                chart: {
+                    height: 328,
+                    type: "line",
+                    zoom: {
+                        enabled: false
+                    },
+                    dropShadow: {
+                        enabled: true,
+                        top: 3,
+                        left: 2,
+                        blur: 4,
+                        opacity: 1
+                    }
+                },
+                stroke: {
+                    curve: "smooth",
+                    width: 2
+                },
+                colors: ["#00ff40", "#ff0040"],
+                series: [{
+                        name: "Goals",
+                        data: [5, 1, 13, 15, 25, 34, 35, 30, 48, 60, 63, 69, 61, 57, 55, 53, 49, 39, 44, 45],
+                    },
+                    {
+                        name: "Assist",
+                        data: [4, 2, 14, 11, 10, 11, 12, 5, 18, 18, 13, 15, 20, 17, 16, 12, 13, 4, 7, 6],
+                    }
+                ],
+                title: {
+                    text: "Goal Contribution (Calendar Year)",
+                    align: "left",
+                    offsetY: 25,
+                    offsetX: 20
+                },
+                subtitle: {
+                    text: "Statistics",
+                    offsetY: 55,
+                    offsetX: 20
+                },
+                markers: {
+                    size: 6,
+                    strokeWidth: 0,
+                    hover: {
+                        size: 9
+                    }
+                },
+                grid: {
+                    show: true,
+                    padding: {
+                        bottom: 0
+                    }
+                },
+                labels: [
+                    "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011",
+                    "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"
+                ],
+                xaxis: {
+                    tooltip: {
+                        enabled: false
+                    }
+                },
+                legend: {
+                    position: "top",
+                    horizontalAlign: "right",
+                    offsetY: -20
+                },
+            };
+            new ApexCharts(document.querySelector("#line-adwords"), optionsLine).render();
+        });
+        </script>
+        
 </body>
+
 </html>
